@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .parent{
+
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            border: 1px solid black;
+        }
+        .child1{
+    border: 1px solid black;
+    padding-left: 20px;
+    background-color: azure;
+        }
+
+
+         @media screen and (max-width: 1024px) {
+      .parent {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+
+
+     @media screen and (max-width: 600px) {
+      .parent {
+        grid-template-columns: 1fr;
+      }
+    }
+    </style>
+    
+
+<div class="parent">
+
+    <div class="child1">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd-M_r7bEyuBQzUODeKwobumjZ2bnoB_uelw&s" alt="Artificial Intelligence">
+        <h3>Artificial Intelligence</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, molestiae ad eum laboriosam repellendus veritatis.</p>
+    </div>
+
+    
+    <div class="child1">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd-M_r7bEyuBQzUODeKwobumjZ2bnoB_uelw&s" alt="Artificial Intelligence">
+        <h3>Artificial Intelligence</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, molestiae ad eum laboriosam repellendus veritatis.</p>
+    </div>
+
+    
+    <div class="child1">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd-M_r7bEyuBQzUODeKwobumjZ2bnoB_uelw&s" alt="Artificial Intelligence">
+        <h3>Artificial Intelligence</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, molestiae ad eum laboriosam repellendus veritatis.</p>
+    </div>
+
+    
+    <div class="child1">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd-M_r7bEyuBQzUODeKwobumjZ2bnoB_uelw&s" alt="Artificial Intelligence">
+        <h3>Artificial Intelligence</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, molestiae ad eum laboriosam repellendus veritatis.</p>
+    </div>
+
+</div>
+
+</body>
+</html>

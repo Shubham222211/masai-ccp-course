@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sticky Header & Fixed Footer</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background-color: #69ac1d;
+      color: #fff;
+      padding: 15px 20px;
+      text-align: center;
+      
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #ce3434;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .content {
+      flex: 1;
+      padding: 20px;
+      margin-bottom: 60px; 
+    }
+
+    .scroll-box {
+      max-width: 800px;
+      margin: 0 auto;
+      border: 1px solid black;
+    }
+
+    .scroll-box p {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2>Sticky Header</h2>
+  </header>
+
+  <div class="content">
+    <div class="scroll-box">
+      <h3>Scrolling Content</h3>
+      
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet.</p>
+      <p>Aliquam erat volutpat. Suspendisse eget risus sit amet nulla faucibus convallis.</p>
+      <p>Praesent euismod lorem at quam congue, ac bibendum sem tincidunt.</p>
+      <p>Vivamus scelerisque libero nec nulla egestas, in porttitor nulla feugiat.</p>
+      <p>In fringilla tortor sed purus accumsan, in bibendum leo sagittis.</p>
+      <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia.</p>
+      <p>Phasellus a magna eget sapien rutrum feugiat. Nulla facilisi.</p>
+      <p>Fusce pretium justo in risus luctus, eget ultrices risus aliquam.</p>
+      <p>Nam venenatis tellus nec nisl blandit, vitae placerat purus faucibus.</p>
+      <p>Aenean ultricies mi at elit feugiat, nec accumsan metus accumsan.</p>
+      <p>Morbi imperdiet nisl non magna bibendum, vel tincidunt tortor facilisis.</p>
+      <p>Duis a ligula ac diam sodales scelerisque nec eget libero.</p>
+      <p>Donec nec nulla vitae nisl feugiat porttitor nec a eros.</p>
+      <p>Nullam consectetur, velit sit amet cursus eleifend, turpis lacus rutrum massa.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>Fixed Footer - Always at Bottom Side...</p>
+  </footer>
+
+</body>
+</html>

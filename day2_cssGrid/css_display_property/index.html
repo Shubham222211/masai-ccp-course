@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+         .block-element {
+      display: block;
+      width: 100%;
+      border: 2px solid blue;
+      padding: 10px;
+      margin-bottom: 10px;
+      background-color: #e0f0ff;
+    }
+
+
+    .inline-element {
+      display: inline;
+      background-color: lightgreen;
+      padding: 5px;
+      border: 1px dashed green;
+    }
+
+
+     #inline-block-element {
+      display: inline-block;
+      width: 150px;
+      height: 80px;
+      background-color: peachpuff;
+      border: 2px solid orange;
+      padding: 10px;
+      margin: 5px;
+    }
+
+      #hidden-element {
+      display: none;
+      background-color: lightcoral;
+      padding: 10px;
+      border: 2px solid red;
+    }
+    </style>
+</head>
+<body>
+    <h2>Block Element:</h2>
+
+    <div class="block-element">this is block element</div>
+
+
+    <h2>Inline Element:</h2>
+     <span class="inline-element">
+      I am inline-element.
+    </span>
+
+
+    <h2>Inline block Element:</h2>
+     <span id="inline-block-element">
+      I am inline-block-element.
+    </span>
+
+     <strong>None (Hidden) Element:</strong>
+    <div id="hidden-element">
+      You can see me only when toggled!
+    </div>
+    <button onclick="toggleVisibility()">Toggle Hidden Element</button>
+</body>
+</html>
+<script>
+    function toggleVisibility() {
+      const el = document.getElementById("hidden-element");
+      el.style.display = el.style.display === "none" ? "block" : "none";
+    }
+  </script>
