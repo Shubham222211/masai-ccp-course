@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <style>
+        .parentbox {
+            border: 1px solid;
+            width: 90%;
+            margin-left: 60px;
+            background: linear-gradient(to bottom, rgb(0, 140, 255), rgb(0, 255, 234));
+            color: white;
+        }
+
+        .parentbox h2 {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+        .parentbox div {
+            display: flex;
+            align-items: center;
+            /* border: 1px solid black; */
+            justify-content: space-around;
+            padding: 10px;
+            width: 300px;
+            margin-left: 440px;
+
+        }
+        .myport{
+            margin-left: 160px;
+        }
+
+        thead tr{
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parentbox">
+
+        <h2>My Portfolio</h2>
+        <div>
+            <p>Home</p>
+            <p>About</p>
+            <p>Project</p>
+            <p>Contact</p>
+        </div>
+    </div>
+
+    <div class="myport">
+    <h2>Welcome to My Portfolio</h2>
+    <p>This portfolio showcase my projects and provide information about my background and contact details.</p>
+    <h2>About</h2>
+    <p>HAello i'm a web developer passionate about building dynamic and responsive website </p>
+    <h2>Projects</h2>
+    <table border="1" cellpadding="10" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Project Name</th>
+                <th>Description</th>
+                <th>Year</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Project Alpha</td>
+                <td>A web based toolfor tracking project progress and managing task</td>
+                <td>2023</td>
+            </tr>
+            <tr>
+                <td>portfolio site</td>
+                <td>A personal website showcasing my wor and skills as a web developer</td>
+                <td>2024</td>
+            </tr>
+            
+            </tr>
+        </tbody>
+
+    </table>
+
+    <h2>Contact</h2>
+    <p>Name:</p>
+    <input type="text">
+    <p>Email:</p>
+    <input type="text">
+    <p>Name:</p>
+    <input type="text">
+    <div>
+    <label for="message">Your Message:</label><br>
+    <textarea name=""></textarea>
+</div>
+<button>submit</button>
+</div>
+</body>
+
+</html>
