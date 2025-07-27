@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    function createBankAccount(initialBalance) {
+  let balance = initialBalance
+
+  return {
+    deposit: function(amount) {
+      if (amount <= 0) {
+        return "Deposit amount must be positive.";
+      }
+      balance += amount;
+      return balance;
+    },
+
+    withdraw: function(amount) {
+      if (amount <= 0) {
+        return "Withdraw amount must be positive."
+      }
+      if (amount > balance) {
+        return "Insufficient funds."
+      }
+      balance -= amount
+      return balance
+    },
+
+    getBalance: function() {
+      return balance;
+    }
+  };
+}
+
+</script>
