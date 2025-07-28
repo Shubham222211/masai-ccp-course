@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+function processProducts(products) {
+  
+  const productNames = products.map(product => product.name)
+
+  
+  products.forEach(product => {
+    if (product.price > 50) {
+      console.log(`${product.name} is above $50`)
+    } else {
+      console.log(`${product.name} is below $50`)
+    }
+  })
+  return productNames;
+}
+
+
+
+</script>
