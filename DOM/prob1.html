@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Manipulation Example</title>
+  <style>
+    .container {
+      padding: 20px;
+      margin-top: 20px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="main-heading">Hello</h1>
+
+  <p>This is paragraph one.</p>
+  <p>This is paragraph two.</p>
+  <p>This is paragraph three.</p>
+
+  <div class="container">
+    <p>This is inside the container div.</p>
+  </div>
+
+  <script>
+    
+    const heading = document.getElementById('main-heading');
+    heading.textContent = "Welcome to the DOM World!";
+
+    
+    const para = document.getElementsByTagName('p');
+    for (let i = 0; i < para.length; i++) {
+      para[i].style.color = 'blue';
+    }
+
+    const containerDiv = document.querySelector('.container');
+    containerDiv.style.backgroundColor = 'yellow';
+  </script>
+
+</body>
+</html>
