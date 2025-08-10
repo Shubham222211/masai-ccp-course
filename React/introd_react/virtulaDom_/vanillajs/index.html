@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html><!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="title">Title</h1>
+    <p>DOM Updates: <span id="domCount">0</span></p>
+    <button id="btn">Change Title</button>
+
+    <script>
+      let count = 0;
+
+      document.getElementById("btn").addEventListener("click", () => {
+        document.getElementById("title").innerText =
+          " Title " + (count + 1);
+        count++;
+        document.getElementById("domCount").innerText = count;
+      });
+    </script>
+  </body>
+</html>
